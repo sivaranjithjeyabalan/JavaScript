@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title>
+            Personal Information 
+        </title>
+        <link rel="stylesheet" href="styles/style.css">
+        <script src="script/script.js"></script>
+    </head>
+    <body>
+        <div id="head">
+        <p><h1>Submit your application</h1>
+        for<strong>.Net Developer(Fresher)</strong></p></div>
+        <br>
+        <h1>Personal Details</h1>
+        <br>
+        <form>
+        <div id="name">
+            <label>Name as per ID proof<sup>*</sup>:</label>
+          <br>
+        <input type="text" name="name" id="username">
+        <label id="nameLabel" style=" visibility: hidden;">required</label>
+        </div>
+        <div id="fatherName">
+        <label>Father's Name<sup>*</sup> :</label><br>
+            <input type="text" id="fathername" name="father_name">
+            <label id="fnameLabel" style=" visibility: hidden;"></label>
+        </div>
+        <div id="mail">
+        <label>Email Id <sup>*</sup>:</label> <br>
+        <input type="text" id="email_id">
+        <label id="emailLabel" style=" visibility: hidden;">Email id required</label><br></div>
+        <br>
+        <div id="cAddress">
+            Current Address :<br>
+            <input type="text" name="current_address" id="curAdd" placeholder="Address line 1"> 
+             <input type="text" name="current_address"  placeholder="Address line 2">
+            <br>
+            <br>
+            <br>
+            <input type="text" name="city"  placeholder="City">
+            <label id="cityLabel" style="visibility: hidden;"></label>
+            <select id="state">
+                <option value="TamilNadu">Tamil Nadu</option>
+                <option value="Andhrapradesh">Andhrapradesh</option>
+                <option value="Kerala">Kerala</option>
+                <Option value="Karnataka">Karnataka</Option>
+            </select> 
+            <input type="text"  name="pincode" placeholder="Zipcode">
+        </div>
+        <br>
+        <div id="pAddress">
+            <label>Permanent Address <sup>*</sup> :</label> Same as currentaddress :<input type="checkbox" onclick="CheckBox()" id="check"><br>
+            <input type="text" name="permanent_address" id="perAdd" placeholder="Address line 1" >
+            <label id="perAddLabel" style="visibility: hidden;">required</label>
+            <inpit type="text" name="permanent_address"  placeholder="Address line 2" > 
+            <br>
+            <br>
+            <br>
+            <input type="text" name="city" id="cityName" placeholder="City">
+            <select id="state">
+                <option value="TamilNadu">Tamil Nadu</option>
+                <option value="Andhrapradesh">Andhrapradesh</option>
+                <option value="Kerala">Kerala</option>
+                <Option value="Karnataka">Karnataka</Option>
+            </select> 
+            <input type="text" id="zip" name="pincode" placeholder="Zipcode">
+            <label id="pinLabel" style="visibility: hidden;">required</label>
+        </div>
+        
+        <br>
+        <div id="dateOfBirth">
+            <label>Date Of Birth<sup>*</sup>:</label><br>
+            <input type="text" name="date_of_birth" id="dob" placeholder="DD-MM-YYYY">
+            <label id="dateLabel" style="visibility: hidden;"></label>
+        </div>
+        <br>
+        <div id="mobileNo">
+             <label>Mobile No<sup>*</sup> :</label><br>
+            <input type="text" name="mobile_no" id="mobile">
+            <label id="mobileLabel" style=" visibility: hidden;">Mobile no required</label>
+        </div>
+        <div id="upload">
+            <h4>Upload profile photo JPG/PNG formats only</h4>
+             Please upload a photo of yourself. your face should be clearly visible, make sure image size does not exceed 500kb:<br> <br>
+            <button type="menu" id="up" >Upload</button>
+            <input type="file">
+        </div>
+        <br>
+        <br>
+        <button id="bu" type="button" onclick="Name(),FatherName(),MobileNoValidate(),EmailValidate(),ZipValidate(),DateOfBirthValidate(),RequiredFields()">Next</button>
+    </form>
+    </body>
+</html>
